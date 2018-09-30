@@ -65,12 +65,14 @@
             <from uri="direct:delay-n-log"/>
             <process ref="delayProcessor"/>
             <log message="Processed ${body}" loggingLevel="INFO"/>
+            <to uri="mock:check-direct-msgs-received"/>
         </route>
 
         <route>
             <from uri="seda:delay-n-log?concurrentConsumers=20"/>
             <process ref="delayProcessor"/>
             <log message="Processed ${body}" loggingLevel="INFO"/>
+            <to uri="mock:check-seda-msgs-received"/>
         </route>
     </camelContext>
 </beans>
