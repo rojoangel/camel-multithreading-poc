@@ -14,9 +14,29 @@ To build this project use
 
     mvn install
 
-To run this project with Maven use
+To run the tests for this project with Maven use
 
     mvn camel:run
+
+To run the non concurrency test use
+
+    make run_no_concurrency_test
+
+To run the parallel processing test use
+
+    make run_parallel_processing_test
+
+To run the unbounded parallel processing test use
+
+    make run_unbounded_parallel_processing_test
+
+To run the 20 fixed thread pool test use
+
+    make run_20_fixed_thread_pool_test
+
+To run the 20 seda thread pool test use
+
+    make run_20_seda_thread_pool_test
 
 For more help see the Apache Camel documentation
 
