@@ -3,11 +3,11 @@ Camel Multithreading PoC
 
 This project has been build using
 
-    mvn archetype:generate                          \
-      -DarchetypeGroupId=org.apache.camel.archetype \
-      -DarchetypeArtifactId=camel-archetype-spring  \
-      -DarchetypeVersion=2.22.1                     \
-      -DgroupId=poc.performance                     \
+    mvn archetype:generate                           \
+      -DarchetypeGroupId=org.apache.camel.archetypes \
+      -DarchetypeArtifactId=camel-archetype-spring   \
+      -DarchetypeVersion=2.22.1                      \
+      -DgroupId=poc.performance                      \
       -DartifactId=test
 
 To build this project use
